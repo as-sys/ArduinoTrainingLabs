@@ -35,16 +35,9 @@ void loop() {
   // if buttonState is True/Pushed by human the LED will blink
   if (buttonState==HIGH){
     digitalWrite(led, HIGH);
-    delay(1500);
-    digitalWrite (led, LOW);
-    delay(500);
   }
-
+  else {
+    digitalWrite(led, LOW);
+  }
   delay(1); // delay in between readings for stability 
-  
-  // put your main code here, to run repeatedly:
-  digitalWrite(led, HIGH);
-  delay(1500);
-  digitalWrite(led, LOW);
-  delay(500);  
 }
